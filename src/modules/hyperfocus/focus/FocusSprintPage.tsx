@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { screenSkillLoadout } from "../../../config/hyperfocus_skill_stack";
 import { heroIdeaSeed } from "../../../content/heroIdeaSeed";
 
 export function FocusSprintPage() {
+  const navigate = useNavigate();
   const focusSkills = screenSkillLoadout.focus;
   const { microTasks, rescueMessage } = heroIdeaSeed.focusSprint;
 
@@ -55,6 +57,15 @@ export function FocusSprintPage() {
           <div className="task-panel task-panel--complete">
             <h2>Sprint complete</h2>
             <p>You moved through every step. That counts.</p>
+            <div className="task-actions">
+              <button
+                type="button"
+                className="primary"
+                onClick={() => navigate("/win")}
+              >
+                See your win
+              </button>
+            </div>
           </div>
         )}
 
