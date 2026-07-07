@@ -1,5 +1,8 @@
 # Phase 1b Focus Route Design
 
+## Status
+**COMPLETE (2026-07-08).** The repo now ignores local dependency noise (and stopped tracking the previously-committed `node_modules/`), boots a minimal React app shell, and exposes `/focus` as the first visible runtime consumer of `screenSkillLoadout.focus`. Verified: `npm test` 7/7 green, `vite build` clean, and a browser check confirmed `/` redirects to `/focus` and renders `HS-078`, `HS-010`, `HS-069`. Delivered in commits `1cf4a15`→`e2bacce`.
+
 ## Goal
 Turn the tested skill stack into the first visible runtime consumer by adding a minimal `/focus` route and a small repo hygiene pass.
 
