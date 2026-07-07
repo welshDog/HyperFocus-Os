@@ -1,6 +1,7 @@
 # HyperFocus OS War Room
 
 ## Start Here
+- [Agent Start](AGENT_START.md)
 - [Master Brief](war-room/01_MASTER_BRIEF.md)
 - [Judge Pitch](war-room/02_JUDGE_PITCH.md)
 - [Product Shape](war-room/03_PRODUCT_SHAPE.md)
@@ -19,6 +20,7 @@
 - Main goal: ship one calm, memorable, demo-safe MVP
 
 ## How To Use This Pack
+- Read `AGENT_START.md` first if you are a new agent or starting a fresh session.
 - Read `01_MASTER_BRIEF.md` first.
 - Use `02_JUDGE_PITCH.md` before writing copy, pitching, or recording demos.
 - Use `03_PRODUCT_SHAPE.md` to protect scope.
