@@ -27,4 +27,12 @@ describe("hyperfocus skill stack", () => {
   it("keeps the focus screen mapped to the intended focus stack", () => {
     expect(screenSkillLoadout.focus).toEqual(["HS-078", "HS-010", "HS-069"]);
   });
+
+  it("keeps the ux-flow-guardian loadout aligned with the focus stack", () => {
+    expect(agentSkillLoadout["ux-flow-guardian"]).toEqual([
+      "HS-078",
+      "HS-010",
+      "HS-069",
+    ]);
+  });
 });
