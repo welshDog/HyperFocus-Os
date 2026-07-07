@@ -9,6 +9,8 @@
 - [7-Day Sprint Plan](war-room/06_SPRINT_PLAN.md)
 - [Risk, Security, and QA](war-room/07_RISK_SECURITY_QA.md)
 - [Submission Checklist](war-room/08_SUBMISSION_CHECKLIST.md)
+- [Skill Activation Map](SKILL_ACTIVATION_MAP.md)
+- [Agent Skill Loadout](AGENT_SKILL_LOADOUT.md)
 
 ## Current Command
 - Flagship: `HyperFocus OS`
@@ -23,3 +25,5 @@
 - Use `04_AGENT_COMMAND.md` to route work to the right specialist.
 - Use `05_BUILD_SYSTEM.md` and `06_SPRINT_PLAN.md` to build.
 - Use `07_RISK_SECURITY_QA.md` and `08_SUBMISSION_CHECKLIST.md` before submission.
+- Use `SKILL_ACTIVATION_MAP.md` to know which vault skills matter for which doc, screen, or phase.
+- Use `AGENT_SKILL_LOADOUT.md` to know which skills each specialist should load first.
