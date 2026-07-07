@@ -1,0 +1,398 @@
+Nice one, Bro. Here’s my best shot: go for the Billion Pound Build first, then add one hackathon as your “live proof” event. That gives you the best mix of visibility, founder credibility, and a reason to ship something sharp fast.
+
+My ranking
+Rank	Opportunity	Why it fits you
+1	Billion Pound Build	Best for showing off an AI/product system with founder energy and strong visibility. 
+2	Building an AI Scientist Hackathon	Strong technical prestige, great if you want to build something deep and impressive in a weekend. 
+3	TxOdds X Solana – World Cup Hackathon	Good if you want a web3-adjacent public demo and a fast, social build. 
+4	Responsible AI Hackathon	Solid if you want a credible, practical angle that reads well to employers, partners, or press. 
+5	UK Quantum Hackathon	More niche, but a standout if you want to look different from the usual AI crowd. 
+Why this is the play
+Billion Pound Build is the strongest “seen by the world” move because it’s tied to a visible platform and a competitive founder story.
+
+Your edge is not just code. It’s system design, speed, AI workflows, and weirdly useful tools for real people. That is hackathon gold.
+
+You’ll stand out more by shipping one clean, useful thing than by trying to enter five events at once.
+
+Best project shape
+Build something that screams “this guy ships”:
+
+An AI founder ops agent.
+
+An ADHD hyperfocus assistant.
+
+A Discord-to-product launch system.
+
+A workflow that turns rough ideas into deployable MVPs.
+
+48-hour plan
+Pick one problem you already understand deeply.
+
+Build the smallest working demo.
+
+Make the UI simple and punchy.
+
+Record a 60–90 second demo video.
+
+Post it with a clear story: what it does, why it matters, and who it helps.
+
+My direct recommendation
+Enter Billion Pound Build now. Then use the same project to apply to one hackathon that matches the stack and vibe.
+
+That way, you’re not just competing — you’re building a public proof-of-power.
+
+Want me to turn this into a single winning project idea with a title, pitch, and build steps for you, Bro?
+
+Yes, please. And give me the full information on it too. Who's it with, what I need to do, all of it. Nice one.
+
+Absolutely, Bro. Here’s the full picture on the one I’d pick for you: The Billion Pound Build by Perplexity. It’s a UK startup competition announced at London Tech Week 2026, built around using Perplexity Computer to create a company with serious scale potential.
+
+Who it’s with
+Organiser: Perplexity.
+
+Theme: computer-native startups, built using Perplexity Computer.
+
+Format: skill-based startup competition, not a normal hackathon.
+
+Prize pool: up to £1M in Computer Credits, shared among up to 3 winners.
+
+What you need to do
+Enter with a team of one or two people.
+
+Submit a pitch in any format — written, document, video, dashboard, website, or anything else.
+
+You get 4 weeks to pitch and then 8 weeks to build if selected as a finalist.
+
+Up to 20 finalists move into the build phase.
+
+The winner reveal is planned for 23 September 2026.
+
+What Perplexity is looking for
+They’re looking for founders who can use one intelligent interface to move from idea to website, research to product, insight to operation.
+
+That means your strongest angle is a project that shows:
+
+leverage,
+
+speed,
+
+useful automation,
+
+and a clear path to real users.
+
+Best fit for you
+For you, Bro, this is a brilliant fit because your edge is:
+
+AI systems,
+
+agent orchestration,
+
+Discord/community tooling,
+
+and shipping fast with a real story behind it.
+
+A strong project would be something like:
+
+an AI founder ops assistant,
+
+an ADHD hyperfocus productivity system,
+
+or an agent that turns rough ideas into deployable MVPs.
+
+Important caution
+The publicly visible summary says the competition terms are in the official T&Cs page, and a Reddit discussion of the terms claims there are clauses about subscription eligibility, broad content permissions, and that winners are not automatically guaranteed investment, but I’d treat that as secondary commentary rather than the primary source.
+
+The safe read is: check the official terms carefully before entering, especially if you plan to share anything proprietary.
+
+My recommendation
+If you want maximum exposure with the least wasted motion, do this:
+
+Pick one killer project.
+
+Build a sharp demo page or dashboard.
+
+Submit to The Billion Pound Build.
+
+Reuse the same build for a hackathon or two.
+
+Nice one, Bro — this is a very strong stage for your kind of builder energy.
+
+Would you like me to turn this into a ready-to-enter project concept with a title, pitch text, build scope, and a 7-day sprint plan?
+
+Yes, please, give me the exact folder tree
+
+Absolutely, Bro. Here’s the exact folder tree I’d use for HyperFocus OS, kept clean for a hackathon submission and aligned with good repo practice: README at the root, docs in a dedicated folder, source in src/ or app/, and no clutter.
+
+Exact tree
+text
+HyperFocus-Os/
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ package.json
+├─ tsconfig.json
+├─ vite.config.ts
+├─ eslint.config.js
+├─ index.html
+├─ public/
+│  ├─ favicon.svg
+│  └─ og/
+│     └─ preview.png
+├─ docs/
+│  ├─ PROJECT_BRIEF.md
+│  ├─ PITCH.md
+│  ├─ FEATURE_SCOPE.md
+│  ├─ USER_FLOW.md
+│  ├─ DEMO_SCRIPT.md
+│  ├─ SUBMISSION_CHECKLIST.md
+│  ├─ BUILD_NOTES.md
+│  └─ IDEA_BANK.md
+└─ src/
+   ├─ main.tsx
+   ├─ App.tsx
+   ├─ styles/
+   │  └─ globals.css
+   ├─ components/
+   │  ├─ Header.tsx
+   │  ├─ Hero.tsx
+   │  ├─ IdeaInput.tsx
+   │  ├─ ResearchPanel.tsx
+   │  ├─ PlanPanel.tsx
+   │  ├─ TasksPanel.tsx
+   │  └─ Footer.tsx
+   ├─ lib/
+   │  ├─ demoFlow.ts
+   │  ├─ promptTemplates.ts
+   │  └─ types.ts
+   ├─ data/
+   │  └─ sampleIdeas.ts
+   └─ assets/
+      └─ logo.svg
+What each part does
+README.md: the front door. It explains what the project is and how to run it. GitHub recommends a README for every repo.
+
+docs/: all your submission writing lives here, so judges can find the story fast.
+
+src/: the actual prototype code.
+
+components/: one component per job, so the demo stays easy to reason about.
+
+lib/: shared logic, types, and demo flow helpers.
+
+data/: sample input and example content.
+
+public/: only static files you really need.
+
+What I’d keep out
+No node_modules/.
+
+No .env files with real secrets.
+
+No build artefacts like dist/.
+
+No random scratch folders.
+
+No duplicate docs outside docs/.
+
+Best shape for the demo
+If you want the cleanest hackathon version, make src/ contain only:
+
+one page,
+
+five small components,
+
+one demo flow helper,
+
+one sample data file.
+
+That keeps the repo readable and the submission story sharp.
+
+Optional later additions
+Only add these if they genuinely help:
+
+tests/
+
+scripts/
+
+notes/
+
+screenshots/
+
+For the first submission, smaller is better.
+
+Nice one, Bro. Next I can give you the exact contents of src/ and the component responsibilities so the build is fully mapped out.
+
+@GitHub @hyper-sills-by-welshdog wow amazing bro well done push what we got so far to the repo https://github.com/welshDog/HyperFocus-Os please
+
+Nice one, Bro. I can’t actually push to GitHub from here, but I can give you the exact push-ready steps and the safest commit plan so you can ship it in minutes. GitHub recommends a clear README, a tidy structure, and secure repository settings, so what we’ve built so far is on the right track.
+
+What to push now
+Push the repo skeleton and docs first:
+
+README.md
+
+docs/PROJECT_BRIEF.md
+
+docs/PITCH.md
+
+docs/FEATURE_SCOPE.md
+
+docs/USER_FLOW.md
+
+docs/DEMO_SCRIPT.md
+
+docs/SUBMISSION_CHECKLIST.md
+
+docs/BUILD_NOTES.md
+
+docs/IDEA_BANK.md
+
+.gitignore
+
+LICENSE
+
+That gives the repo a clean public face before the app code exists.
+
+Safe commit order
+Commit the docs.
+
+Commit the folder structure.
+
+Commit the first app scaffold.
+
+Push to the main branch only when everything is clean.
+
+Use one commit per logical chunk so the history stays readable.
+
+Copy-paste commands
+bash
+git status
+git add README.md docs/ .gitignore LICENSE
+git commit -m "docs: add hackathon brief and submission pack"
+git push origin main
+If the repo already has a branch setup, swap main for the correct branch name.
+
+What to check before pushing
+README is in the root.
+
+Docs are all inside docs/.
+
+No secrets are committed.
+
+No build output is included.
+
+Repo name is correct: HyperFocus-Os.
+
+Best next move
+After this push, create the first scaffold commit for:
+
+src/
+
+src/components/
+
+src/lib/
+
+public/
+
+That makes the repo look alive and ready for build-out without overloading it.
+
+If you want, I can write the exact first scaffold file list and starter code plan next, Bro.
+
+@hyper-sills-by-welshdog @GitHub why? you Github MCP on ? try
+
+Yeah Bro — I get you now. You want the repo pushed from the GitHub MCP / connector path, not just manual advice. I can’t actually execute your GitHub connector from here, but I can give you the exact MCP-ready push sequence and the repo state to send.
+
+What to do
+Use the GitHub MCP connector if it’s available in your client. Perplexity’s MCP server is designed to connect assistants to GitHub and other tools.
+
+Push the docs-first commit.
+
+Then push the scaffold commit.
+
+Keep the repo clean and readable. GitHub recommends a root README and clear repo structure.
+
+MCP-ready push plan
+Create files locally in HyperFocus-Os.
+
+Stage docs first:
+
+README.md
+
+docs/PROJECT_BRIEF.md
+
+docs/PITCH.md
+
+docs/FEATURE_SCOPE.md
+
+docs/USER_FLOW.md
+
+docs/DEMO_SCRIPT.md
+
+docs/SUBMISSION_CHECKLIST.md
+
+docs/BUILD_NOTES.md
+
+docs/IDEA_BANK.md
+
+Commit:
+
+docs: add hackathon brief and submission pack
+
+Push to main.
+
+Then stage scaffold files:
+
+src/
+
+public/
+
+package.json
+
+vite.config.ts
+
+tsconfig.json
+
+eslint.config.js
+
+.gitignore
+
+LICENSE
+
+Commit:
+
+feat: scaffold hyperfocus os repo
+
+Push again.
+
+Why this is the right order
+Judges and collaborators can understand the project immediately from the README and docs.
+
+A clean scaffold shows the repo is alive without pretending the app is finished.
+
+It keeps the hackathon story tight and easy to follow.
+
+If you want the shortest possible command path
+bash
+git add README.md docs/
+git commit -m "docs: add hackathon brief and submission pack"
+git push origin main
+
+git add src/ public/ package.json vite.config.ts tsconfig.json eslint.config.js .gitignore LICENSE
+git commit -m "feat: scaffold hyperfocus os repo"
+git push origin main
+If the MCP connector is active
+Tell it to:
+
+read the repo,
+
+create the docs files,
+
+commit them,
+
+push them,
+
+then create the scaffold and push again.
+
+Nice one, Bro. I’m ready to help you write the exact scaffold files next so the first code push is clean too.
+
+
