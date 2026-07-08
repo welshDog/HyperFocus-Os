@@ -3,13 +3,14 @@ import { MemoryRouter } from "react-router-dom";
 import { describe, expect, it } from "vitest";
 
 import { heroIdeaSeed } from "../../../content/heroIdeaSeed";
+import { routerFutureFlags } from "../../../routerFutureFlags";
 import { FocusSprintPage } from "./FocusSprintPage";
 
 const { microTasks, rescueMessage } = heroIdeaSeed.focusSprint;
 
 function renderPage() {
   return render(
-    <MemoryRouter>
+    <MemoryRouter future={routerFutureFlags}>
       <FocusSprintPage />
     </MemoryRouter>,
   );

@@ -4,11 +4,12 @@ import { describe, expect, it } from "vitest";
 
 import { App } from "./App";
 import { heroIdeaSeed } from "./content/heroIdeaSeed";
+import { routerFutureFlags } from "./routerFutureFlags";
 
 describe("App hero flow", () => {
   it("walks Dump -> Plan -> Focus -> Win for the hero idea", () => {
     render(
-      <MemoryRouter initialEntries={["/"]}>
+      <MemoryRouter initialEntries={["/"]} future={routerFutureFlags}>
         <App />
       </MemoryRouter>,
     );

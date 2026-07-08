@@ -3,11 +3,12 @@ import { MemoryRouter } from "react-router-dom";
 import { describe, expect, it } from "vitest";
 
 import { heroIdeaSeed } from "../../../content/heroIdeaSeed";
+import { routerFutureFlags } from "../../../routerFutureFlags";
 import { PlanPage } from "./PlanPage";
 
 function renderPage() {
   return render(
-    <MemoryRouter>
+    <MemoryRouter future={routerFutureFlags}>
       <PlanPage />
     </MemoryRouter>,
   );
