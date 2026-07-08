@@ -5,4 +5,8 @@ coverage/
 .trae/
 .playwright-mcp/
 *.log
+.vercel
+.env
+.env.*
+!.env.example
 .free Ai Helper
