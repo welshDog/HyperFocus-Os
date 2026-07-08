@@ -16,6 +16,8 @@ Your job is to keep this repo calm, focused, and aligned with the war-room brief
 If you need the full strategy context, read `docs/WAR_ROOM_LATEST.md` first.
 
 ## Core Truth Sources
+- `docs/BUILD_STATUS.md`
+  - Where the build is right now (routes, providers, tests, what's next) — read this first
 - `docs/WAR_ROOM_LATEST.md`
   - Stable pointer to the full war-room pack
 - `docs/war-room/01_MASTER_BRIEF.md`
@@ -61,18 +63,21 @@ Machine-readable source of truth:
 Do not improvise a new skill stack when the config already defines one.
 
 ## Runtime And Tests
-Current verified runtime consumer:
-- `src/config/hyperfocus_skill_stack.test.ts`
+The app is built: the full `Dump → Plan → Focus → Win` flow runs, seeded and offline-safe, with an optional live-AI plan endpoint. See `docs/BUILD_STATUS.md` for the full picture.
 
-What is currently guaranteed by tests:
-- `getSessionStartupSkills()` returns `["HS-125", "HS-030"]`
-- `getSkillsForTaskGroup("flowSkills")` returns `["HS-123", "HS-078"]`
-- `agentSkillLoadout["frontend-craftsman"]` matches the UX-safe trio
-- `screenSkillLoadout.focus` matches the intended Focus screen stack
-- `agentSkillLoadout["ux-flow-guardian"]` aligns with the same Focus-safe pattern
+Runtime consumers of the skill stack:
+- `src/config/hyperfocus_skill_stack.test.ts` — the config invariants
+- `src/modules/hyperfocus/focus/FocusSprintPage.tsx` — renders `screenSkillLoadout.focus` in the UI
 
-Command to trust:
-- `npm test`
+What the test suite guarantees (22 tests across 7 files):
+- Skill-stack invariants: `getSessionStartupSkills()` → `["HS-125", "HS-030"]`, `getSkillsForTaskGroup("flowSkills")` → `["HS-123", "HS-078"]`, the Focus-safe agent/screen loadouts
+- The `/focus` screen renders the focus skill stack and drives the micro-task + rescue flow
+- The Dump / Plan / Win screens render from `heroIdeaSeed`
+- An app-level integration test walks the whole hero flow
+- The planner returns the seed in demo mode and falls back to the seed on live-call failure
+
+Commands to trust:
+- `npm test` (suite) · `npm run typecheck` (browser + API) · `npm run build`
 
 Before changing the skill stack or its runtime consumers, run tests and keep them green.
 
@@ -80,14 +85,15 @@ Before changing the skill stack or its runtime consumers, run tests and keep the
 Follow this order whenever you start work on `HyperFocus OS`:
 
 1. Read `docs/AGENT_START.md`
-2. Read `docs/WAR_ROOM_LATEST.md`
-3. Read `docs/war-room/01_MASTER_BRIEF.md`
-4. Read `docs/war-room/03_PRODUCT_SHAPE.md`
-5. Read `docs/SKILL_ACTIVATION_MAP.md`
-6. Read `docs/AGENT_SKILL_LOADOUT.md`
-7. Inspect `src/config/hyperfocus_skill_stack.ts`
-8. Run `npm test`
-9. Only then start implementation or propose changes
+2. Read `docs/BUILD_STATUS.md` (where the build is right now)
+3. Read `docs/WAR_ROOM_LATEST.md`
+4. Read `docs/war-room/01_MASTER_BRIEF.md`
+5. Read `docs/war-room/03_PRODUCT_SHAPE.md`
+6. Read `docs/SKILL_ACTIVATION_MAP.md`
+7. Read `docs/AGENT_SKILL_LOADOUT.md`
+8. Inspect `src/config/hyperfocus_skill_stack.ts`
+9. Run `npm test`
+10. Only then start implementation or propose changes
 
 ## Solo Agent In TRAE
 If you are the active solo agent in TRAE, use this startup pattern.

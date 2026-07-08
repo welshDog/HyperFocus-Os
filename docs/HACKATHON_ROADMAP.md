@@ -1,5 +1,7 @@
 # HyperFocus OS — Hackathon Roadmap (Phase 1c → Demo-Complete)
 
+> **Status (2026-07-08): DEMO-COMPLETE.** Phases 1a–1d and the optional 1d+ live-AI moment are all shipped and green (22 tests, typecheck, build). Remaining work is submission polish. The authoritative current-state doc is [`docs/BUILD_STATUS.md`](BUILD_STATUS.md); this file is the plan that got us here.
+
 ## Context
 HyperFocus OS turns rough ideas into research, launch plans, and bite-sized next steps for solo founders and neurodivergent builders. For the hackathon the target is a **calm, demoable product with one flawless story** — not breadth.
 
@@ -17,8 +19,11 @@ Seeded hero idea: `src/content/heroIdeaSeed.ts` (a newsletter for ADHD developer
 ## Where We Are
 - **Phase 1a — done.** Skill-stack config proven by tests (`src/config/hyperfocus_skill_stack.ts`).
 - **Phase 1b — done.** `/focus` route renders `screenSkillLoadout.focus`; app shell, tests, build all green.
+- **Phase 1c — done.** Focus Sprint calm micro-task flow + "I'm stuck" rescue.
+- **Phase 1d — done.** Full `Dump → Plan → Focus → Win` wired end-to-end, seeded, with an app-flow test.
+- **Phase 1d+ — done.** `demoMode` flag + multi-provider `/api/plan` (OpenRouter free / Perplexity / Anthropic) with seed fallback.
 
-## Phase 1c — Focus Sprint becomes a calm micro-task flow
+## Phase 1c ✅ — Focus Sprint becomes a calm micro-task flow
 **Plan:** `docs/superpowers/plans/2026-07-08-focus-sprint-phase1c.md`
 
 - One seeded micro-task at a time, "Mark this done" advances, calm "Sprint complete" end state.
@@ -26,7 +31,7 @@ Seeded hero idea: `src/content/heroIdeaSeed.ts` (a newsletter for ADHD developer
 - **Refinement vs the plan as written:** instead of a standalone `focusSprintSeed.ts`, consume `heroIdeaSeed.focusSprint.microTasks` and `heroIdeaSeed.focusSprint.rescueMessage` so the whole demo shares one source of truth. (The plan's inline seed is fine as a starting point; unify onto the hero seed when wiring 1d.)
 - **Exit criteria:** the Focus screen drives the hero idea's three micro-tasks to completion, rescue toggles, tests + build green.
 
-## Phase 1d — Extend the spine to the full hero flow
+## Phase 1d ✅ — Extend the spine to the full hero flow
 Goal: make `Dump → Plan → Focus → Win` walk end-to-end for the one hero idea.
 
 1. **Dump screen (`/`, or `/dump`)** — a calm textarea pre-fillable with `heroIdeaSeed.rawDump`; a single "Make this calm" action.
@@ -37,10 +42,11 @@ Goal: make `Dump → Plan → Focus → Win` walk end-to-end for the one hero id
 
 **Exit criteria:** a single click-path completes the whole story; every screen reads from `heroIdeaSeed`.
 
-## Phase 1d+ (optional, only if time) — the live AI moment
+## Phase 1d+ ✅ — the live AI moment (shipped)
 - One constrained AI call on **Dump → Plan**: raw text in, the `distilled` / `research[]` / `launchPlan[]` **schema** out. The model fills the shape; it never freeforms into the UI. This is the answer to "not a generic AI wrapper."
-- **`demoMode` flag** (env or toggle): when on, Dump → Plan returns `heroIdeaSeed` deterministically. Default to demo mode for the live run.
-- If the AI call errors or times out, fall back to the seed silently.
+- **`demoMode` flag** (`isDemoMode()`, ON by default): Dump → Plan returns `heroIdeaSeed` deterministically. Live mode calls `/api/plan`.
+- **Pluggable provider switch** (`api/plan.ts`): OpenRouter (free default) / Perplexity / Anthropic, chosen via `PLAN_PROVIDER` or a request `provider` field. Adding an OpenAI-compatible provider is one config entry.
+- Any failure falls back to the seed silently. Setup: `docs/LIVE_AI_ENDPOINT.md`.
 
 ## Demo Hardening (do before submission, not after)
 - Add the `demoMode` flag and confirm the full path works with **network disabled**.
@@ -56,9 +62,9 @@ Persistence, auth, accounts, multiple ideas/personas, task editing, real integra
 3. **Session C:** demo hardening + submission pack (video, README, screenshots).
 4. **Stretch:** the live AI moment with seeded fallback — only if A–C are solid.
 
-## Definition of "Demo-Complete"
-- One click-path walks Dump → Plan → Focus → Win for the hero idea.
-- Works with the network off (seeded).
-- The "I'm stuck" rescue lands as an emotional beat.
-- `npm test` and `vite build` green.
-- Submission pack ready (see `docs/SUBMISSION_PACK.md`).
+## Definition of "Demo-Complete" — MET ✅
+- ✅ One click-path walks Dump → Plan → Focus → Win for the hero idea.
+- ✅ Works with the network off (seeded).
+- ✅ The "I'm stuck" rescue lands as an emotional beat.
+- ✅ `npm test` and `vite build` green.
+- ⏳ Submission pack — the one remaining item (see `docs/SUBMISSION_PACK.md`).

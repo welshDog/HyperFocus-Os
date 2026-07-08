@@ -51,8 +51,8 @@ npm run preview  # preview the production build
 
 ## Tech stack
 
-TypeScript · React 18 · React Router · Vite · Vitest · Testing Library.
-State is in-memory and seeded — no backend, auth, or persistence required to run the demo.
+TypeScript · React 18 · React Router · Vite · Vitest · Testing Library · Vercel serverless functions.
+State is in-memory and seeded — no backend, auth, or persistence required to run the demo. The optional live-AI plan endpoint (`api/plan.ts`) is a pluggable provider switch (OpenRouter free / Perplexity / Anthropic) that always falls back to the seed.
 
 ## Architecture story (built thoughtfully, not vibes)
 
@@ -71,12 +71,17 @@ war-room truth docs  →  machine-readable skill stack  →  tests as first cons
 
 ## Status
 
+**Demo-complete** as of 2026-07-08 — all checks green (22 tests, typecheck, build).
+
 - **Phase 1a** — skill-stack config proven by tests.
 - **Phase 1b** — `/focus` renders `screenSkillLoadout.focus`; minimal app shell.
 - **Phase 1c** — Focus Sprint becomes a calm micro-task flow with the "I'm stuck" rescue.
 - **Phase 1d** — full `Dump → Plan → Focus → Win` hero flow wired end-to-end, seeded, with an app-level integration test.
+- **Phase 1d+** — `demoMode` flag + real multi-provider `/api/plan` (OpenRouter free / Perplexity / Anthropic), with a seed fallback so the demo never breaks.
 
-Roadmap: [`docs/HACKATHON_ROADMAP.md`](docs/HACKATHON_ROADMAP.md) · Submission checklist: [`docs/SUBMISSION_PACK.md`](docs/SUBMISSION_PACK.md)
+Next up is submission polish (video, screenshots), not core build.
+
+**Current state:** [`docs/BUILD_STATUS.md`](docs/BUILD_STATUS.md) · Roadmap: [`docs/HACKATHON_ROADMAP.md`](docs/HACKATHON_ROADMAP.md) · Live-AI setup: [`docs/LIVE_AI_ENDPOINT.md`](docs/LIVE_AI_ENDPOINT.md) · Submission checklist: [`docs/SUBMISSION_PACK.md`](docs/SUBMISSION_PACK.md)
 
 ## For contributors / agents
 
