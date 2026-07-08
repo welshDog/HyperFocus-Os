@@ -1,9 +1,18 @@
+import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { heroIdeaSeed } from "../../../content/heroIdeaSeed";
+import { useHeroFlow } from "../../../state/HeroFlowContext";
 
 export function DumpPage() {
   const navigate = useNavigate();
+  const { runPlanner } = useHeroFlow();
+  const dumpRef = useRef<HTMLTextAreaElement>(null);
+
+  function makeCalm() {
+    runPlanner(dumpRef.current?.value ?? "");
+    navigate("/plan");
+  }
 
   return (
     <main className="focus-page">
@@ -15,6 +24,7 @@ export function DumpPage() {
         </p>
 
         <textarea
+          ref={dumpRef}
           className="dump-input"
           aria-label="Brain dump"
           rows={6}
@@ -22,11 +32,7 @@ export function DumpPage() {
         />
 
         <div className="task-actions">
-          <button
-            type="button"
-            className="primary"
-            onClick={() => navigate("/plan")}
-          >
+          <button type="button" className="primary" onClick={makeCalm}>
             Make this calm
           </button>
         </div>

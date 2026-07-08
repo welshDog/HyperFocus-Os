@@ -1,10 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
-import { heroIdeaSeed } from "../../../content/heroIdeaSeed";
+import { useHeroFlow } from "../../../state/HeroFlowContext";
 
 export function PlanPage() {
   const navigate = useNavigate();
-  const { distilled, research, launchPlan } = heroIdeaSeed;
+  const { plan } = useHeroFlow();
+  const { distilled, research, launchPlan } = plan;
 
   return (
     <main className="focus-page">
